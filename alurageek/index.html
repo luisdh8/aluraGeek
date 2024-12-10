@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	<title>AluraGeek</title>
+</head>
+<body>
+	 <!-- Encabezado -->
+	 <header class="header">
+        <img src="./assets/Logo.svg" alt="logo alurageek" />
+    </header>
+
+    <!-- Contenedor principal -->
+    <main class="main-container">
+        <section>
+            <h1>Mis Productos:</h1>
+            <div data-product class="products-container"></div>
+        </section>
+
+        <!-- Sección de agregar productos -->
+        <section>
+            <h1>Agregar Producto:</h1>
+
+            <!-- Formulario para agregar productos -->
+            <form class="form-container" data-form>
+                <input data-name placeholder="nombre..." type="text">
+                <input data-price placeholder="precio..." type="text">
+                <input data-image placeholder="imagen..." type="text">
+                <span data-mensage class="mensajeError"></span>
+                <div class="button-container">
+                    <button type="submit" class="button-submit" id="button"> Enviar...</button>
+                    <button type="reset" class="button-clear" id="button">Limpiar...</button>
+                </div>
+            </form>
+            
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer-container">
+        <div>
+            <img src="./assets/Logo.svg" />
+        </div>
+        <p> Desarollado por [tu nombre]</p>
+        <small>Alura Latam 2024</small>
+    </footer>
+	<script type="module" src="js/controllers/main.js"></script>
+</body>
+</html>
