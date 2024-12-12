@@ -25,7 +25,7 @@
 
 ## 📍 Estado del Proyecto
 
-El proyecto se encuentra en desarrollo activo y se espera que esté listo para su despliegue en la web. Actualmente, se están implementando las funcionalidades para agregar, mostrar y eliminar pilotos.
+El proyecto se encuentra finalizado. Quizás en un futuro se agregan nuevas funcionalidades.
 
 ## ⚙️ Características del Proyecto
 
@@ -37,9 +37,9 @@ El proyecto se encuentra en desarrollo activo y se espera que esté listo para s
 
 - **HTML5**: Para estructurar el contenido de la plataforma.
 - **CSS3**: Para el diseño y estilo visual.
-- **JavaScript (Vanilla)**: Para la lógica y manejo de eventos.
+- **JavaScript**: Para la lógica y manejo de eventos.
 - **JSON Server**: Para simular una API RESTful y manejar los datos de los pilotos de manera local.
-- **React (Opcional)**: Para una experiencia más dinámica (si se opta por integrar React).
+- **API**: Se tomó como referencia la siguiente documentación para la obtención de la información: https://openf1.org/#drivers.
 
 ## 🔗 Acceso al Proyecto
 
