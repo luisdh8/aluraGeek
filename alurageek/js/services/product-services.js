@@ -1,49 +1,20 @@
-const BASE_URL = "http://localhost:3001/products";
+const BASE_URL = "https://api.openf1.org/v1/drivers";
 
+// Obtener la lista de pilotos (GET)
 const productList = async () => {
   try {
     const response = await fetch(BASE_URL);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
     const data = await response.json();
     return data;
   } catch (error) {
-    console.error("Error al obtener la lista de productos:", error);
-  }
-};
-
-const createProduct = async (name, price, image) => {
-  try {
-    const response = await fetch(BASE_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ name, price, image }),
-    });
-
-    const data = await response.json();
-    console.log("Solicitud POST exitosa:", data);
-    return data;
-  } catch (error) {
-    console.error("Error en la solicitud POST:", error);
-  }
-};
-
-const deleteProduct = async (id) => {
-  try {
-    await fetch(`${BASE_URL}/${id}`, {
-      method: "DELETE",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
-    console.log(`Producto con id ${id} eliminado exitosamente`);
-  } catch (error) {
-    console.error("Error en la solicitud DELETE:", error);
+    console.error("Error al obtener la lista de pilotos:", error);
+    throw error;
   }
 };
 
 export const servicesProducts = {
-  productList,
-  createProduct,
-  deleteProduct,
+  productList
 };

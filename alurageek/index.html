@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="styles/style.css">
-	<title>AluraGeek</title>
+	<title>F1 Geek</title>
 </head>
 <body>
 	 <!-- Encabezado -->
@@ -16,23 +16,25 @@
     <!-- Contenedor principal -->
     <main class="main-container">
         <section>
-            <h1>Mis Productos:</h1>
+            <h1>My Drivers:</h1>
             <div data-product class="products-container"></div>
         </section>
 
         <!-- Sección de agregar productos -->
         <section>
-            <h1>Agregar Producto:</h1>
-
+            <h1>Register Drivers:</h1>
+            <div class="logo">
+                <img id="logo" src="./assets/Logo.png" alt="logo" />
+            </div>
             <!-- Formulario para agregar productos -->
             <form class="form-container" data-form>
-                <input data-name placeholder="nombre..." type="text">
-                <input data-price placeholder="precio..." type="text">
-                <input data-image placeholder="imagen..." type="text">
+                <input data-name placeholder="Name..." type="text">
+                <input data-price placeholder="Team..." type="text">
+                <input data-image placeholder="Image url..." type="text">
                 <span data-mensage class="mensajeError"></span>
                 <div class="button-container">
-                    <button type="submit" class="button-submit" id="button"> Enviar...</button>
-                    <button type="reset" class="button-clear" id="button">Limpiar...</button>
+                    <button type="submit" class="button-submit" id="button">Register</button>
+                    <button type="reset" class="button-clear" id="button">Clear</button>
                 </div>
             </form>
             
@@ -41,10 +43,7 @@
 
     <!-- Pie de página -->
     <footer class="footer-container">
-        <div>
-            <img src="./assets/Logo.svg" />
-        </div>
-        <p> Desarollado por [tu nombre]</p>
+        <p>By Luis Díaz</p>
         <small>Alura Latam 2024</small>
     </footer>
 	<script type="module" src="js/controllers/main.js"></script>
